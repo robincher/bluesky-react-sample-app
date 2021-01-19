@@ -26,10 +26,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.20.1'
-      - name: Install npm and run test
+      - name: Install yarn and run test
         run: |  
-          npm
-          npm test
+          yarn
+          yarn test
 
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
