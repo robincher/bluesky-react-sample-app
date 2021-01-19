@@ -11,10 +11,6 @@ on:
   # # Run tests for any PRs.
   # pull_request:
 
-env:
-  # TODO: Change variable to your image's name.
-  # IMAGE_NAME: bluesky-react-sample-app
-
 jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
