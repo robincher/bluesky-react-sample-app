@@ -36,7 +36,7 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/
   build-publish:
     # Ensure test job passes before pushing image.
-    needs: test
+    needs: init-test
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
