@@ -49,6 +49,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 More about Github actions [Github Actions with Container Push](https://docs.github.com/en/packages/guides/using-github-packages-with-github-actions)
 
+Dockerizing an react app [Deploying React App to DigitalOcean](https://dev.to/kenessajr/deploy-a-react-app-to-digitalocean-using-github-actions-and-docker-4pln)
+
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
