@@ -38,15 +38,15 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-      - name: Build and push container image to Github Packages
-        uses: docker/build-push-action@v1
-        with:
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: ${{ github.repository }}/bluesky-react-sample-app
-          tag_with_sha: true
-          tag_with_ref: true
+      # - name: Build and push container image to Github Packages
+      #   uses: docker/build-push-action@v1
+      #   with:
+      #     username: ${{ github.actor }}
+      #     password: ${{ secrets.GITHUB_TOKEN }}
+      #     registry: docker.pkg.github.com
+      #     repository: ${{ github.repository }}/bluesky-react-sample-app
+      #     tag_with_sha: true
+      #     tag_with_ref: true
       - name: Build and push container image to Dockerhub
         uses: docker/build-push-action@v1
         with:

@@ -6,6 +6,13 @@ It is meant for demo purpose and illustrate how we can package a webapp into Con
 
 For the second part of this demo, please go to [Bluesky GitOps](https://github.com/robincher/bluesky-gitops-demo)
 
+## Workflow
+
+![bluesky-wf-code.png](https://github.com/robincher/bluesky-gitops-demo/blob/master/assets/bluesky-wf-code.png?raw=true)
+
+1. A developer can trigger a release by updating a Git reponsitory which contains the application code
+2. Github Actions will test , build and publish the packaged code as a container to a registry
+
 ## Instruction for using this sample App
 
 ### Available Scripts
