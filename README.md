@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It is meant for demo purpose and illustrate how we can package a webapp into Container, and pushed to a registry with automation (via Github actions).
+It will illustrate how we can test, build and package a web app before publishing into a registry with automation via Github actions.
 
 For the second part of this demo, please go to [Bluesky GitOps](https://github.com/robincher/bluesky-gitops-demo)
 
@@ -11,7 +11,8 @@ For the second part of this demo, please go to [Bluesky GitOps](https://github.c
 ![bluesky-wf-code.png](https://github.com/robincher/bluesky-gitops-demo/blob/master/assets/bluesky-wf-code.png?raw=true)
 
 1. A developer can trigger a release by updating a Git reponsitory which contains the application code
-2. Github Actions will test , build and publish the packaged code as a container to a registry
+2. Github Actions will test , build and package the web app into a container
+3. Upon packaging , Github actions will publish the container to a container registry
 
 ## Instruction for using this sample App
 
