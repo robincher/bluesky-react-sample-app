@@ -8,7 +8,7 @@ For the second part of this demo, please go to [Bluesky GitOps](https://github.c
 
 ## Workflow
 
-![bluesky-wf-code.png](https://github.com/robincher/bluesky-gitops-demo/blob/master/assets/bluesky-wf-code.png?raw=true)
+![bluesky-wf-code.png](https://github.com/robincher/bluesky-react-sample-app/blob/master/assets/bluesky-wf-code.png?raw=true)
 
 1. A developer can trigger a release by updating a Git reponsitory which contains the application code
 2. Github Actions will test , build and package the web app into a container
