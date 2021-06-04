@@ -1,4 +1,7 @@
-FROM node:12.20.1-alpine3.9
+FROM node:14.17.0-alpine3.13
+
+#Install utilities
+RUN apk update && apk --no-cache add curl busybox-extras g++ make
 
 WORKDIR /usr/src/app
 COPY package*.json ./
