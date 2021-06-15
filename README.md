@@ -53,6 +53,50 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### Packaging 
+
+#### Build docker image
+`docker build -t reponame/imagename:tag .`
+
+#### Run local docker container
+`docker run -d --name containername -p 3000:3000 reponame/imagename:tag`
+
+
+#### Helm
+
+1. Generating helm template 
+
+`helm create <<chart-name>>`
+
+2. Modification on the default values
+
+Update container port to 3000, since our code are running on port 3000
+
+```
+ports:
+    - name: http
+        containerPort: 3000
+        protocol: TCP
+```
+
+3. Install via helm
+
+Install helm chart for bluesky react. 
+
+`helm install <<release-name>> ./helm --kube-context <<kube context>>`
+
+4. Port forward for your own testing
+
+`kubectl port-forward service/release-name 3011:3000`
+
+ Try testing the page response
+
+`curl http://localhost:3011`
+
+5. Clean-up helm chart
+
+`helm uninstall <<release-name`
+
 ## Learn More
 
 More about Github actions [Github Actions with Container Push](https://docs.github.com/en/packages/guides/using-github-packages-with-github-actions)

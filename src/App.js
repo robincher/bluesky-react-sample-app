@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is version 7 of Bluesky!
+          This is version 9 of Bluesky!
         </p>
         <a
           className="App-link"

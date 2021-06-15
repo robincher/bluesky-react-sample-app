@@ -22,3 +22,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#Helm Notes and helper
+/helm/templates/*.txt
+/helm/templates/_helpers.tpl
